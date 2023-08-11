@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .{
+      margin: 0px;
+      padding: 0px;
+    }
+    .center{
+      width: 10vh;
+      height: 60%;
+      display: flex;
+       flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 40vh;
+    }
+    .meta{
+      width: 16vh;
+      display: flex;
+       flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 32vh;
+    }
+    .a{
+      text-align: center;
+      margin: 20px;
+    }
+  </style>
+</head>
+
+<body onload="myfunction" >
+  <div>
+     <div>
+           <img src="image/insta logo.png" alt="Instagram" class="center">
+     </div>
+     <div>
+          <img src="image/metaa.png" alt="meta" class="meta">
+     </div>
+  </div>
+  <script>
+    var preloader = document.getElementById('loading')
+    function myfunction(){
+      preloader.style.display ='none';
+    }
+  </script>
+</body>
+</html>

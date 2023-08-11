@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=50, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* function printNaturalNumbers(n) {
+    var i = 1;
+    while (i <= n) {
+        console.log(i);
+        i++;
+    }
+}
+
+var n = 10; // Change this value to the desired range
+printNaturalNumbers(n);*/
+/*
+function printNaturalNumbersReverse(n) {
+    var i = n;
+    while (i >= 1) {
+        console.log(i);
+        i--;
+    }
+}
+
+var n = 10; // Change this value to the desired range
+printNaturalNumbersReverse(n);
+*/
+/*
+function printAlphabets() {
+    var letter = 'a';
+    while (letter <= 'z') {
+        console.log(letter);
+        letter = String.fromCharCode(letter.charCodeAt(0) + 1);
+    }
+}
+
+printAlphabets();*/
+
+/*function printMultiplicationTable(number) {
+    console.log(`Multiplication Table of ${number}:`);
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${number} x ${i} = ${number * i}`);
+    }
+}
+
+const inputNumber = prompt("enter your number"); // Change this to the desired number
+printMultiplicationTable(inputNumber);*/
+
+/*function findFirstAndLastDigit(number) {
+    const numStr = number.toString();
+    
+    const firstDigit = parseInt(numStr.charAt(0));
+    const lastDigit = parseInt(numStr.charAt(numStr.length - 1));
+
+    console.log(`Number: ${number}`);
+    console.log(`First Digit: ${firstDigit}`);
+    console.log(`Last Digit: ${lastDigit}`);
+}
+
+const inputNumber = prompt("enter your number"); // Change this to the desired number
+findFirstAndLastDigit(inputNumber);*/
+
+/*function sumOfFirstAndLastDigit(number) {
+    const numStr = number.toString();
+    
+    const firstDigit = parseInt(numStr.charAt(0));
+    const lastDigit = parseInt(numStr.charAt(numStr.length - 1));
+
+    const sum = firstDigit + lastDigit;
+
+    console.log(`Number: ${number}`);
+    console.log(`First Digit: ${firstDigit}`);
+    console.log(`Last Digit: ${lastDigit}`);
+    console.log(`Sum of First and Last Digits: ${sum}`);
+}
+
+const inputNumber = 12345; // Change this to the desired number
+sumOfFirstAndLastDigit(inputNumber);
+
+
+*/
+
+/*function swapFirstAndLastDigits(number) {
+    let numStr = number.toString();
+    let length = numStr.length;
+
+    if (length < 2) {
+        console.log(`Number: ${number}`);
+        console.log(`Cannot swap digits - Number has only one digit.`);
+        return;
+    }
+
+    let swappedNumber = '';
+
+    let i = length - 1;
+    while (i > 0) {
+        swappedNumber += numStr[i];
+        i--;
+    }
+
+    swappedNumber += numStr[0];
+
+    console.log(`Number: ${number}`);
+    console.log(`Swapped Number: ${swappedNumber}`);
+}
+
+const inputNumber = 12345; // Change this to the desired number
+swapFirstAndLastDigits(inputNumber);
+
+*/
+
+function isPalindrome(number) {
+    const originalNumber = number;
+    let reversedNumber = 0;
+    
+    while (number > 0) {
+        const digit = number % 10;
+        reversedNumber = reversedNumber * 10 + digit;
+        number = Math.floor(number / 10);
+    }
+
+    if (originalNumber === reversedNumber) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+const inputNumber = 12321; // Change this to the desired number
+const palindromeCheck = isPalindrome(inputNumber);
+
+if (palindromeCheck) {
+    console.log(`${inputNumber} is a palindrome.`);
+} else {
+    console.log(`${inputNumber} is not a palindrome.`);
+}
+
+    </script>
+</body>
+</html>

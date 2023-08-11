@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100vh;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(240, 238, 235);
+
+        } 
+        .box{
+            height: 60%;
+            width: 40%;
+            border: 2px solid red;
+        }
+        #inner-box1{
+            height: 70%;
+            border: 2px dashed blanchedalmond;
+            width: 70%;
+           margin: auto;
+        }
+        #inner-box2{
+            height: 10%;
+            border: 2px dashed palevioletred;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #inner-box3{
+            height: 18%;
+            border: 2px dashed red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo{
+            height: 20px;
+            border: 2px dashed white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .input{
+            height: 50%;
+            border: 2px dashed rgb(7, 7, 7);
+          }
+          .links{
+            height: 25%;
+            border: 2px dashed green;
+          }
+        .input{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .input input{
+            width: 70%;
+            height: 20%;
+        }
+        .input button{
+            width: 72%;
+            height: 20%;
+        }
+        .links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .m{
+            border-top: 3px solid black;
+            width: 30%;
+        }
+        .s{
+            font-size: 30px;
+        }
+        #box-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .facebook{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -50px;
+        }
+        .facebook1{
+            width: auto;
+           font-size: 14px;
+           text-align: center;
+           font-family:'Times New Roman', Times, serif;
+           font-weight: var(- -font-weight-system-semibold); 
+           pointer-events: auto;
+           text-transform: inherit;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box" id="box-1">
+        <img src="image/insa-removebg-preview.png" alt="" width="60%" height="60%">
+    </div>
+    <div class="box" id="box-2">
+        <div id="inner-box1">
+            <div class="logo">
+                <img src="image/instagram-logo-illustration__2_-removebg-preview.png" alt="" width="320px" height="170px">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="username">
+                <input type="text" placeholder="password">
+                <button>Login</button>
+            </div>
+            <div class="links">
+                <span class="m"></span><span class="s">or</span><span class="m"></span>
+            </div>
+        </div>
+        <div id="inner.box2">
+            <div>
+                <button class="facebook" type="button">
+                    <span class="face">
+                        <img src="https://img.freepik.com/premium-vector/blue-social-media-logo_197792-1759.jpg" alt="facebook" width="24px" height="24px">
+                    </span>
+                    <span class="facebook1">Log in with facebook</span>
+                </button>
+            </div>
+            <div></div>
+        </div>
+        <div id="inner-box3">
+            <img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="" width="40%" height="60%">
+            <img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="" width="40%" height="60%">
+        </div>
+    </div>
+     
+</div>
+</body>
+</html>
